@@ -36,4 +36,7 @@ int main() {
             break;
     }
 
+    // float result = getMeter(number);
+    // printf("In meter :- %.2f", result);
+    // printf("In meter :- %.2f", getMeter(number))
 }
