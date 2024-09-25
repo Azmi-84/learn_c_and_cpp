@@ -10,6 +10,7 @@ float check_result(float total_answers, float wrong_answers) {
 
 int main() {
     int total_answers, wrong_answers;
+
     printf("Total answer :- ");
     scanf("%d", &total_answers);
     printf("Wrong answer :- ");
