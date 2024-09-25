@@ -8,5 +8,5 @@ int main() {
 	scanf("%d", &number_01);
 
 	printf("Please provide the second number: \n");
-	scanf("%d", &number_02)
+	scanf("%d", &number_02);
 }
