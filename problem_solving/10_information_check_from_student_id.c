@@ -33,17 +33,23 @@ void printDepartment(char array[]) {
 
 // Function to print the section based on array[6]
 void printSection(char array[]) {
-    if (array[6] == '1') {
-        printf("Section :- A\n");
-    } else if (array[6] == '2') {
-        printf("Section :- B\n");
-    } else if (array[6] == '3') {
-        printf("Section :- C\n");
-    } else {
-        printf("Invalid ID and section doesn't exist !!!\n");
-    }
-}
+    // converting the last two digits into integer
+    int last_two_digits = (array[7] - '0') * 10 + (array[8] - '0');
 
+    if(array[6] == '1' && last_two_digits % 2 == 1) {
+        printf("Section :- A1\n");
+    } else if(array[6] == '1' && last_two_digits % 2 == 0) {
+        printf("Section :- A2\n");
+    } else if(array[6] == '2' && last_two_digits % 2 == 1) {
+        printf("Section :- B1\n");
+    } else if(array[6] == '2' && last_two_digits % 2 == 0) {
+        printf("Section :- B2\n");
+    } else {
+        printf("Invlaid ID\n");
+    }
+
+    return;
+}
 int main() {
     char array[9];
 
