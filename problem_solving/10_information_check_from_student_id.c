@@ -54,7 +54,7 @@ int main() {
     char array[9];
 
     printf("Enter the ID :- ");
-    scanf("%s", array);
+    scanf("%s", &array);
 
     checkEvenOdd(array);      // Check if ID is even or odd
     printBatch(array);        // Print batch
