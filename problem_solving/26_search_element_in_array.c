@@ -4,7 +4,7 @@
 void check_number(char array[]) {
   int input_num;
   int index_num = array[] - '0';
-    
+
   for(int i = 0; i < MAX_SIZE; i++) {
   printf("Enter the array size:- \n");
   scanf("")
