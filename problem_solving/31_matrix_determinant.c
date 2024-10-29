@@ -43,6 +43,23 @@ int main() {
     }
     printf("\n");
   }
+  
+  int two_dimension_matrix_determinant = 0;
+
+  if (row == col && row == 2) {
+    for (int k = 0; k < row; k++) {
+      for (int m = 0; m < col; m++) {
+        two_dimension_matrix_determinant = (matrix[0][0] * matrix[1][1]) - (matrix[0][1] * matrix[1][0]);
+      }
+    }
+    printf("The determinat of 2D matrix is:- %d\n", two_dimension_matrix_determinant);
+  }
+
+  // Determinant of nxn matrix using Gaussian Elimation
 
   
+  for(int k = 0; k < row; k++) {
+    free(matrix[k]);
+  }
+  free(matrix);
 }
