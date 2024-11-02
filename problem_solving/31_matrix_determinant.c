@@ -9,13 +9,13 @@ int main() {
 
   printf("Enter the colum of the matrix:- ");
   scanf("%d", &col);
-  
+
   int **matrix = (int **)malloc(sizeof(row * sizeof(int)));
 
   if (matrix == NULL) {
     printf("Memory allocation failed !!!\n");
   }
-  
+
   for (int i = 0; i < row; i++) {
     matrix[i] = (int *)malloc(sizeof(col * sizeof(int)));
 
@@ -43,7 +43,7 @@ int main() {
     }
     printf("\n");
   }
-  
+
   int two_dimension_matrix_determinant = 0;
 
   if (row == col && row == 2) {
@@ -57,7 +57,7 @@ int main() {
 
   // Determinant of nxn matrix using Gaussian Elimation
 
-  
+
   for(int k = 0; k < row; k++) {
     free(matrix[k]);
   }
